@@ -1,0 +1,17 @@
+$pinck: #FF2E63;
+$black: #252A34;
+$blue: #346CD9;
+$white:#fff;
+
+
+$mobile-bp: 575px;
+$pad-bp: 768px;
+$tablet-bp : 1021px;
+
+@mixin breakpoint($bp) {
+    
+	@media screen and (max-width: $bp) {
+		 @content;
+	}
+	
+}

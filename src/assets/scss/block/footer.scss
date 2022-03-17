@@ -1,0 +1,55 @@
+.footer{
+	background-color: $blue;
+}
+
+.footer__menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0px;
+	@include breakpoint($mobile-bp){
+		padding: 10px 0px;
+	}
+}
+
+.footer__logo{
+	font-family: Rajdhani;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 38px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: $white;
+	@include breakpoint($tablet-bp){
+		font-size: 20px;
+		padding-left: 10px;
+	}
+	@include breakpoint($mobile-bp){
+		font-size: 12px;
+	}
+}
+
+.footer__link{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	color: $white;
+	margin: 0px 15px;
+	&:hover{
+		color: $pinck;
+	}
+	@include breakpoint($tablet-bp){
+		margin: 0px 5px;
+		font-size: 12px;
+		padding-right: 10px;
+	}
+	@include breakpoint($mobile-bp){
+		font-size: 10px;
+		margin: 0px 2px;
+		line-height: 10px;
+	}
+	
+}

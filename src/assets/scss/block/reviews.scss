@@ -1,0 +1,86 @@
+.slider__wrapper{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.slider__slide{
+	display: flex;
+	// width: 100%;
+	background-color:#346bd954;
+	position: relative;
+	@include breakpoint($mobile-bp){
+		flex-wrap: wrap;
+		width: 100%;
+		order: 2;
+	}
+}
+
+.slider__review{
+	width: 50%;
+	max-width: 640px;
+	@include breakpoint($mobile-bp){
+		width: 100%;
+		order: 2;
+	}
+}
+
+.slider__image{
+	width: 50%;
+	max-width: 640px;
+	@include breakpoint($mobile-bp){
+		width: 100%;
+		order: 1;
+	}
+}
+
+
+.slider__text{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	padding: 78px 120px 30px 120px;
+	@include breakpoint($tablet-bp){
+		font-size: 12px;
+		line-height: 25px;
+		padding: 10px;
+	}
+	@include breakpoint($mobile-bp){
+		font-size: 10px;
+		line-height: 18px;
+		padding: 5px;
+	}
+}
+
+.slider__after{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	@include breakpoint($tablet-bp){
+		font-size: 14px;
+		line-height: 25px;
+	}
+	@include breakpoint($mobile-bp){
+		font-size: 10px;
+		line-height: 18px;
+	}
+}
+
+.swiper .swiper-pagination{
+	bottom: 0px;
+}
+
+.swiper .swiper-pagination-bullet{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+	background-color: $pinck;
+}
+	
+	 

@@ -1,0 +1,30 @@
+body {
+    background-color: white;
+    font-size: 21px;
+    color: #000;
+    font-family: Open Sans;
+    
+}
+body.lock{
+    overflow: hidden
+}
+
+
+
+// vendor
+@import "vendor/reset";
+@import "vendor/vars";
+
+
+// block
+
+@import "block/container";
+@import "block/header";
+@import "block/car";
+@import "block/section";
+@import "block/title";
+@import "block/carts";
+@import "block/works";
+@import "block/reviews";
+@import "block/footer";
+@import "block/burger";

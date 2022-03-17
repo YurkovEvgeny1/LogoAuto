@@ -1,0 +1,104 @@
+.header__menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header__menu {
+	padding: 30px 0px;
+	@include breakpoint($mobile-bp){
+		padding: 10px 0;
+		justify-content: space-between;
+	}
+}
+
+.header__logo {
+	font-family: Rajdhani;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 38px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	@include breakpoint($tablet-bp){
+		font-size: 20px;
+	}
+	@include breakpoint($pad-bp){
+		font-size: 20px;
+	}
+	
+	
+}
+span{
+	color: $pinck;
+}
+.header__list{
+	@include breakpoint($mobile-bp){
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.header__link{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	margin: 0px 15px;
+	transition: all 0.5s ease 0s;
+	&:hover{
+		color: $pinck;
+	}
+	@include breakpoint($tablet-bp){
+		margin: 0px 5px;
+		font-size: 12px;
+	}
+	@include breakpoint($pad-bp){
+		font-size: 30px;
+		padding: 20px 0px;
+		color: $blue;
+	}
+}
+
+.header__login{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: $pinck;
+	margin-right: 30px;
+	&:hover{
+		color: #be234a;
+	}
+	@include breakpoint($tablet-bp){
+		margin-right: 10px;
+		font-size: 14px;
+	}
+	
+	
+}
+.btn__register{
+	padding: 12px 25px;
+	background-color: $pinck;
+	color: $white;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	border-radius: 5px;
+	&:hover{
+		background-color: #df2554;
+	}
+	&:active{
+		box-shadow: 0 0 10px #df2554d7;
+	}
+	@include breakpoint($tablet-bp){
+		font-size: 14px;
+		line-height: 20px;
+		padding: 6px 20px;
+	}
+	@include breakpoint($pad-bp){
+		padding: 4px 15px;
+	}
+	
+}
+	
